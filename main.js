@@ -19,12 +19,11 @@ const createWindow = () => {
         cusY = (area.height - area.height * 0.5)
     }
     const win = new BrowserWindow({
-        fullscreen:true,
         x: cusX,
         y: cusY,
         width: area.width * 0.5,
         height: area.height * 0.5,
-        frame: true, // 无边框
+        frame: false, // 无边框
         transparent: true, // 透明度
         alwaysOnTop: true, // 窗口置顶
         resizable: true, // 是否可以改变大小

@@ -30,13 +30,10 @@ imgElement.addEventListener("mousedown", ev => {
 
 window.onGlobalKeyBoard = (type, value) => {
     console.log(value+"!!!")
-    $(window).on("keypress",function(event){    
-        var key = event.keyCode;    
-        console.log(String.fromCharCode(key)+"???????????");
-    });
+
     if (1 === type) {
         if(36 === value){
-            loadMusic("asset/audios/j.mp3")
+            loadMusic("assets/audios/j.mp3")
         }
         const imgElement = document.getElementById('imgAvatar');
         if (imgElement.src.concat('闭嘴')) {
